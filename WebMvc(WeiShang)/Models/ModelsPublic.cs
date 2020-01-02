@@ -44,18 +44,14 @@ namespace WebAppli_Weishang_.Models
         /// <summary>
         /// 订单表
         /// </summary>
-        public int         Oid		     { get; set; }// 订单主键
-        public string      Orders	     { get; set; }//订单号
-        public DateTime    Otime	     { get; set; }//订单时间
-        public int         Oshou	     { get; set; }//收货与未收货
-
-        /// <summary>
-        /// 一个商品对应
-        /// </summary>
-        public int         Aid	         { get; set; }// 主键
-        public int         Aoid	         { get; set; }// 订单外键
-        public int         Agid	         { get; set; }// 商品外键
-        public int         Aowid         { get; set; }// 用户外键
+        public int       Oid { get; set; } // 订单主键
+        public string    Orders { get; set; } //订单号
+        public DateTime  Otime { get; set; } //订单时间
+        public int?      Oshou { get; set; } //收货与未收货
+        public int?      Uid { get; set; } // 用户外键
+        public int?      Lid { get; set; } // 收货外键
+        public int?      Aid { get; set; } //订单详情外键
+        public int?      GId { get; set; } //商品外键
 
         /// <summary>
         /// 购物表
